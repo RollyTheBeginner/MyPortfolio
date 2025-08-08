@@ -1,0 +1,74 @@
+/*About section container*/
+#about {
+    width: 100%;
+    text-align: center;
+}
+
+    #about h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+/* About container with flex layout */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    box-sizing: border-box;
+}
+
+    /*Individual items within the about section */
+    .about-container .item {
+        flex: 1;
+        min-width: 280px;
+        max-width: calc(33.333% - 1.5rem); /*  3 items per row with gap accounted for */
+        background-color: #f9f9f9;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-sizing: border-box;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+        .about-container .item h3 {
+            color: #6479c8;
+            font-size: 1.5rem;
+        }
+
+        .about-container .item p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+/* Mobile responsiveness: stack items on small screens */
+@media (max-width: 768px) {
+    #about {
+        margin-left: 0;
+        padding: 1rem 0;
+    }
+
+        #about h1 {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+        .about-container .item {
+            max-width: 100%;
+            margin-bottom: 1rem;
+
+        }
+
+            .about-container .item h3 {
+                font-size: 1.2rem;
+            }
+
+            .about-container .item p {
+                font-size: 0.9rem;
+            }
+}

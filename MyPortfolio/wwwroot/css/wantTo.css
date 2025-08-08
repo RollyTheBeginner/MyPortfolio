@@ -1,0 +1,77 @@
+﻿/* Want To section layout */
+#wantTo {
+    width: 100%;
+    text-align: center;
+}
+
+    /* Section header */
+    #wantTo h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+/* Container layout for the 3 items */
+.wantTo-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    box-sizing: border-box;
+}
+
+    /* Individual card/item */
+    .wantTo-container .item {
+        flex: 1;
+        min-width: 280px;
+        max-width: calc(33.333% - 1.5rem); /* 3 items per row with gap accounted for */
+        background-color: #f9f9f9;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-sizing: border-box;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+        /* Item header */
+        .wantTo-container .item h3 {
+            color: #6479c8;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Paragraphs inside item */
+        .wantTo-container .item p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #wantTo {
+        margin-left: 0;
+        padding: 1rem 0;
+    }
+
+        #wantTo h1 {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+    .wantTo-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+        .wantTo-container .item {
+            max-width: 100%;
+            margin-bottom: 1rem;
+        }
+
+            .wantTo-container .item h3 {
+                font-size: 1.25rem;
+            }
+
+            .wantTo-container .item p {
+                font-size: 0.95rem;
+            }
+}

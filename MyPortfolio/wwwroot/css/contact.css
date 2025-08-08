@@ -1,0 +1,28 @@
+﻿#contact {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 1rem; /* Space between the links */
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    padding: 50px 0 50px 0;
+}
+
+    #contact p {
+        margin: 0; /* Remove default paragraph margin */
+    }
+
+    #contact a {
+        color: #6479c8; /* Your main color */
+        text-decoration: none; /* Remove underline */
+        font-size: 1.2rem; /* Increase font size for better visibility */
+        padding: 0.5rem 1rem; /* Add padding for better click area */
+        border-radius: 5px; /* Rounded edges for the links */
+        transition: all 0.3s ease; /* Smooth transition for hover effect */
+    }
+
+        #contact a:hover {
+            background-color: #6479c8; /* Background color on hover */
+            color: white; /* Text color changes to white on hover */
+            transform: scale(1.05); /* Slight zoom on hover */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow effect */
+        }

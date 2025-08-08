@@ -1,0 +1,91 @@
+/* Ensure container width and padding */
+.navbar-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Tweak nav-brand */
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #4b6cb7; /* Matches VS Code blue or .NET brand */
+}
+
+/* Navigation list layout */
+.navbar-nav {
+    display: flex;
+    gap: 1.25rem;
+}
+
+/* Nav link appearance */
+.nav-link {
+    font-weight: 500;
+    color: #1F2937 !important; /* Dark charcoal */
+    transition: color 0.3s ease;
+}
+
+    .nav-link:hover {
+        color: #007ACC !important;
+    }
+
+/* Optional: hide toggler on desktop */
+@media (min-width: 768px) {
+    .navbar-toggler {
+        display: none;
+    }
+}
+
+
+/* Body styling */
+
+#body-container {
+    padding: 0 5rem;
+    align-items: center;
+}
+
+/*SIDEBAR STYLE*/
+/* Sidebar styling */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 85px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* align items at bottom */
+    align-items: center;
+}
+
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sidebar li {
+        margin-bottom: 0.75rem;
+        color: black;
+    }
+
+    .sidebar a {
+        text-decoration: none;
+        color: black;
+    }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+
+.bottom-line {
+    width: 6px;
+    height: 15%; /* adjust based on your preference */
+    background-color: #000000;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
